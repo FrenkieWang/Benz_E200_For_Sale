@@ -32,7 +32,7 @@ function ImageSlider() {
       display: 'flex', // 使用flex布局
       alignItems: 'center', // 垂直居中对齐子元素
       justifyContent: 'center', // 水平居中对齐子元素
-      width: '90%', // 容器宽度为100%
+      width: '70%', // 容器宽度为100%
       maxWidth: '500px', // 设置最大宽度以适应图片
       margin: 'auto' // 自动外边距用于居中整个容器
     }}>
@@ -42,8 +42,6 @@ function ImageSlider() {
           border: '5px solid black', // 5像素黑色实线边框
           backgroundColor: 'white', // 白色背景
           color: 'black', // 黑色文字
-          padding: '10px 20px', // 内边距：垂直10像素，水平20像素
-          fontSize: '16px', // 字体大小
           cursor: 'pointer', // 鼠标悬停时的光标样式
           outline: 'none', // 移除焦点时的轮廓
         }}

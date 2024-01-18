@@ -41,6 +41,8 @@ function App() {
   }
 
   const opts = {
+    height: '100',
+    width: '160',
     playerVars: {
       autoplay: 1,
     },

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+import styled from 'styled-components';
 import YouTube from 'react-youtube';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,6 +12,21 @@ import WeChat from './images/WeChat.jpg';
 import WhatsApp from './images/WhatsApp.jpg';
 
 import ImageSlider from './ImageSlider';
+
+const ResponsiveYouTubeContainer = styled.div`
+  width: 100%;
+  margin: auto;
+
+  /* 对于小屏幕（如智能手机） */
+  @media (max-width: 767px) {
+    max-width: 320px;
+  }
+
+  /* 对于中等尺寸屏幕（例如平板电脑） */
+  @media (min-width: 768px) {
+    max-width: 640px;
+  }
+`;
 
 function App() {
   const [language, setLanguage] = useState('zh'); // 默认为英文
@@ -80,20 +97,13 @@ function App() {
       <h3 style = {{color : 'brown'}}>
         {language === 'en' ? 'NCT and Road Tax -- Still Valid!' : '车检+保险 -- 还没有过期！'}
       </h3>
-      <img src={NCT_Tax} alt="Description" width="300" height="400"/>
+      <img src={NCT_Tax} alt="Description" width="500" height="300"/>
       <h3 style = {{color : 'brown'}}>
         {language === 'en' ? 'Classic Animation Review -- Initial D' : '头文字D 经典动画回顾'}
       </h3>
-      <YouTube
-        style={{ 
-          width: '100%', // 容器宽度为100%
-          maxWidth: '320px', // 最大宽度
-          margin: 'auto' // 自动外边距实现居中
-        }} 
-        videoId="-OTUgn_RVzo" 
-        opts={opts} 
-        onReady={_onReady} 
-      />
+      <ResponsiveYouTubeContainer>
+        <YouTube videoId="-OTUgn_RVzo" opts={opts} />
+      </ResponsiveYouTubeContainer>
       <h3 style = {{color : 'brown'}}>
         {language === 'en' ? 'Initial Price : Only 2000 Euro ' : '初始价: 只要2000欧'}
       </h3>

@@ -29,9 +29,12 @@ function ImageSlider() {
 
   return (
     <div style={{ 
-      maxWidth: '100%', // 设置最大宽度为100%
-      height: 'auto',  // 高度自动调整
-      border: '5px solid brown' 
+      display: 'flex', // 使用flex布局
+      alignItems: 'center', // 垂直居中对齐子元素
+      justifyContent: 'center', // 水平居中对齐子元素
+      width: '100%', // 容器宽度为100%
+      maxWidth: '500px', // 设置最大宽度以适应图片
+      margin: 'auto' // 自动外边距用于居中整个容器
     }}>
     <button className="btn" 
         onClick={goToPrevious}
@@ -40,7 +43,13 @@ function ImageSlider() {
       src={images[currentIndex]}
       alt={`Slide ${currentIndex}`}
       width="500" 
-      height="400"      
+      height="400"
+      style={{ 
+        maxWidth: '100%', // 图片最大宽度为100%，允许它在容器内缩放
+        height: 'auto', // 高度自动调整
+        border: '5px solid brown',
+        margin: '0 10px' // 添加水平间隔
+      }}
     />
     <button className="btn" 
         onClick={goToPrevious}

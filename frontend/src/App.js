@@ -14,17 +14,17 @@ import WhatsApp from './images/WhatsApp.jpg';
 import ImageSlider from './ImageSlider';
 
 const ResponsiveYouTubeContainer = styled.div`
-  width: 100%;
+  width: 50%;
   margin: auto;
 
   /* 对于小屏幕（如智能手机） */
   @media (max-width: 767px) {
-    max-width: 160px;
+    max-width: 320px;
   }
 
   /* 对于中等尺寸屏幕（例如平板电脑） */
   @media (min-width: 768px) {
-    max-width: 320px;
+    max-width: 640px;
   }
 `;
 

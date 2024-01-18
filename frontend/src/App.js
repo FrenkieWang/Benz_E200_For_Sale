@@ -14,8 +14,8 @@ import WhatsApp from './images/WhatsApp.jpg';
 import ImageSlider from './ImageSlider';
 
 const ResponsiveYouTubeContainer = styled.div`
-  width: 50%;
-  margin-left: 5;
+  width: 60%;
+  margin-left: 0;
   margin-right: 0; 
 
   /* 对于小屏幕（如智能手机） */
@@ -98,7 +98,7 @@ function App() {
       </h3>
       <img src={NCT_Tax} alt="Description" width="300" height="200"/>
       <h3 style = {{color : 'brown'}}>
-        {language === 'en' ? 'Classic Animation Review--Initial D' : '头文字D 经典动画回顾'}
+        {language === 'en' ? ' Animation Review -- Initial D' : '头文字D 经典动画回顾'}
       </h3>
       <ResponsiveYouTubeContainer>
         <YouTube videoId="-OTUgn_RVzo" opts={opts} />

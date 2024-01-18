@@ -39,7 +39,13 @@ function ImageSlider() {
     <button className="btn" 
         onClick={goToPrevious}
         style={{ 
-          border: '5px solid black',
+          border: '5px solid black', // 5像素黑色实线边框
+          backgroundColor: 'white', // 白色背景
+          color: 'black', // 黑色文字
+          padding: '10px 20px', // 内边距：垂直10像素，水平20像素
+          fontSize: '16px', // 字体大小
+          cursor: 'pointer', // 鼠标悬停时的光标样式
+          outline: 'none', // 移除焦点时的轮廓
         }}
     >⬅</button>
     <img
@@ -57,7 +63,13 @@ function ImageSlider() {
     <button className="btn" 
         onClick={goToPrevious}
         style={{ 
-          border: '5px solid black',
+          border: '5px solid black', // 5像素黑色实线边框
+          backgroundColor: 'white', // 白色背景
+          color: 'black', // 黑色文字
+          padding: '10px 20px', // 内边距：垂直10像素，水平20像素
+          fontSize: '16px', // 字体大小
+          cursor: 'pointer', // 鼠标悬停时的光标样式
+          outline: 'none', // 移除焦点时的轮廓
         }}
     >➡</button>
     </div>

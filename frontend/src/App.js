@@ -68,7 +68,7 @@ function App() {
       padding: '20px' // 添加一些内边距
     }}>
       <h3 style = {{color : 'brown'}}>
-        {language === 'en' ? 'Mercedes Benz E200 Kompressor for Sale' : '出二手 奔驰 E200 Kompressor'}
+        {language === 'en' ? 'Mercedes Benz E200 Kompressor' : '出二手 奔驰 E200 Kompressor'}
       </h3>
       <button 
         onClick={toggleLanguage}

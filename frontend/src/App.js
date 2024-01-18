@@ -109,8 +109,20 @@ function App() {
       </h3>
       <h4> {language === 'en' ? 'Please Contact: Gavin ' : '请联系Gavin'}</h4>
       {language === 'en' ? 
-         <img src={WhatsApp} alt="Description" width="300" height="400"/> : 
-         <img src={WeChat} alt="Description" width="300" height="400"/>}
+         <img src={WhatsApp} alt="Description" width="400" height="400"/> : 
+         <img src={WeChat} alt="Description" width="400" height="400"/>}
+      <button 
+          onClick={toggleLanguage}
+          style={{
+            backgroundColor: 'brown', // 灰色背景
+            color: 'white', // 棕色文字
+            borderColor: 'black', // 棕色边框
+            borderWidth: '1px',
+            borderStyle: 'solid'
+          }}
+        >
+          {language === 'en' ? '切换到中文' : 'Switch to English'}
+        </button>
     </div>
   );
 }

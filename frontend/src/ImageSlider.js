@@ -32,7 +32,7 @@ function ImageSlider() {
       display: 'flex', // 使用flex布局
       alignItems: 'center', // 垂直居中对齐子元素
       justifyContent: 'center', // 水平居中对齐子元素
-      width: '100%', // 容器宽度为100%
+      width: '90%', // 容器宽度为100%
       maxWidth: '500px', // 设置最大宽度以适应图片
       margin: 'auto' // 自动外边距用于居中整个容器
     }}>

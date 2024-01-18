@@ -58,9 +58,9 @@ function App() {
       overflow: 'auto',
       padding: '20px' // 添加一些内边距
     }}>
-      <h1 style = {{color : 'brown'}}>
+      <h2 style = {{color : 'brown'}}>
         {language === 'en' ? 'Mercedes Benz E200 Kompressor for Sale' : '出二手 奔驰 E200 Kompressor'}
-      </h1>
+      </h2>
       <button 
         onClick={toggleLanguage}
         style={{
@@ -88,10 +88,8 @@ function App() {
       <h2 style = {{color : 'brown'}}>
         {language === 'en' ? 'Car Image ' : '汽车图片'}
       </h2>
-      <div>
-        <img src={compare1} alt="Description" width="300" height="400" />
-        <img src={compare2} alt="Description" width="300" height="400" />
-      </div>
+      <img src={compare1} alt="Description" width="300" height="400" />
+      <img src={compare2} alt="Description" width="300" height="400" />
       <br />
       <ImageSlider />
       <h3 style = {{color : 'brown'}}>

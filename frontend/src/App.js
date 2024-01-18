@@ -15,7 +15,8 @@ import ImageSlider from './ImageSlider';
 
 const ResponsiveYouTubeContainer = styled.div`
   width: 50%;
-  margin: auto;
+  margin-left: 0;
+  margin-right: auto; // 或者设置为 0，根据需要
 
   /* 对于小屏幕（如智能手机） */
   @media (max-width: 767px) {
@@ -58,9 +59,9 @@ function App() {
       overflow: 'auto',
       padding: '20px' // 添加一些内边距
     }}>
-      <h2 style = {{color : 'brown'}}>
+      <h3 style = {{color : 'brown'}}>
         {language === 'en' ? 'Mercedes Benz E200 Kompressor for Sale' : '出二手 奔驰 E200 Kompressor'}
-      </h2>
+      </h3>
       <button 
         onClick={toggleLanguage}
         style={{

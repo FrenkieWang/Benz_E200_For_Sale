@@ -19,7 +19,7 @@ const ResponsiveYouTubeContainer = styled.div`
   margin-right: 0; 
 
   /* 对于小屏幕（如智能手机） */
-  @media (max-width: 767px) {
+  @media (max-width: 320px) {
     max-width: 320px;
   }
 

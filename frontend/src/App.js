@@ -14,18 +14,26 @@ import WhatsApp from './images/WhatsApp.jpg';
 import ImageSlider from './ImageSlider';
 
 const ResponsiveYouTubeContainer = styled.div`
-  width: 30%;
+  width: 100%;
   margin-left: 0;
   margin-right: 0; 
 
   /* 对于小屏幕（如智能手机） */
-  @media (max-width: 320px) {
-    max-width: 320px;
+  @media (max-width: 767px) {
+    width: 90%; // 小屏幕上的宽度为90%
+    max-width: 320px; // 或其他合适的最大宽度
   }
 
   /* 对于中等尺寸屏幕（例如平板电脑） */
   @media (min-width: 768px) {
+    width: 70%; // 中等屏幕上的宽度为70%
     max-width: 640px;
+  }
+
+  /* 对于大屏幕 */
+  @media (min-width: 1024px) {
+    width: 50%; // 大屏幕上的宽度为50%
+    max-width: 960px;
   }
 `;
 

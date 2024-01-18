@@ -14,7 +14,7 @@ import WhatsApp from './images/WhatsApp.jpg';
 import ImageSlider from './ImageSlider';
 
 const ResponsiveYouTubeContainer = styled.div`
-  width: 50%;
+  width: 30%;
   margin-left: 0;
   margin-right: 0; 
 

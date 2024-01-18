@@ -87,7 +87,7 @@ function App() {
       <YouTube
         style={{ 
           width: '100%', // 容器宽度为100%
-          maxWidth: '640px', // 最大宽度
+          maxWidth: '320px', // 最大宽度
           margin: 'auto' // 自动外边距实现居中
         }} 
         videoId="-OTUgn_RVzo" 

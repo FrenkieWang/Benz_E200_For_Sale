@@ -32,7 +32,17 @@ function ImageSlider() {
     <button className="btn" 
         onClick={goToPrevious}
     >⬅</button>
-    <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} width="500" height="400" style={{ border: '5px solid brown' }}/>
+    <img
+      src={images[currentIndex]}
+      alt={`Slide ${currentIndex}`}
+      width="500" 
+      height="400"
+      style={{ 
+        maxWidth: '100%', // 设置最大宽度为100%
+        height: 'auto',  // 高度自动调整
+        border: '5px solid brown' 
+      }}
+    />
     <button className="btn" 
         onClick={goToPrevious}
     >➡</button>

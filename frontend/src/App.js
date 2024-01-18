@@ -37,8 +37,9 @@ function App() {
       flexDirection: 'column', 
       alignItems: 'center', 
       justifyContent: 'flex-start',
-      height: '100vh', // 这将使div占满整个视口的高度
-      overflow: 'auto'
+      height: 'auto', // 修改为auto，以适应内容高度
+      overflow: 'auto',
+      padding: '20px' // 添加一些内边距
     }}>
       <h1 style = {{color : 'brown'}}>
         {language === 'en' ? 'Mercedes Benz E200 Kompressor for Sale' : '出二手 奔驰 E200 Kompressor'}
@@ -83,7 +84,16 @@ function App() {
       <h3 style = {{color : 'brown'}}>
         {language === 'en' ? 'Classic Animation Review -- Initial D' : '头文字D 经典动画回顾'}
       </h3>
-      <YouTube videoId="-OTUgn_RVzo" opts={opts} onReady={_onReady} />
+      <YouTube
+        style={{ 
+          width: '100%', // 容器宽度为100%
+          maxWidth: '640px', // 最大宽度
+          margin: 'auto' // 自动外边距实现居中
+        }} 
+        videoId="-OTUgn_RVzo" 
+        opts={opts} 
+        onReady={_onReady} 
+      />
       <h3 style = {{color : 'brown'}}>
         {language === 'en' ? 'Initial Price : Only 2000 Euro ' : '初始价: 只要2000欧'}
       </h3>

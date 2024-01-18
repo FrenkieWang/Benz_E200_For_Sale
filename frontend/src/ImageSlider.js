@@ -38,6 +38,9 @@ function ImageSlider() {
     }}>
     <button className="btn" 
         onClick={goToPrevious}
+        style={{ 
+          border: '5px solid black',
+        }}
     >⬅</button>
     <img
       src={images[currentIndex]}
@@ -53,6 +56,9 @@ function ImageSlider() {
     />
     <button className="btn" 
         onClick={goToPrevious}
+        style={{ 
+          border: '5px solid black',
+        }}
     >➡</button>
     </div>
   );

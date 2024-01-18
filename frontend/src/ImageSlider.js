@@ -42,8 +42,8 @@ function ImageSlider() {
     <img
       src={images[currentIndex]}
       alt={`Slide ${currentIndex}`}
-      width="400" 
-      height="300"
+      width="300" 
+      height="200"
       style={{ 
         maxWidth: '100%', // 图片最大宽度为100%，允许它在容器内缩放
         height: 'auto', // 高度自动调整

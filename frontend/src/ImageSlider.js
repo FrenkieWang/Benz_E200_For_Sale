@@ -55,7 +55,7 @@ function ImageSlider() {
         maxWidth: '100%', // 图片最大宽度为100%，允许它在容器内缩放
         height: 'auto', // 高度自动调整
         border: '5px solid brown',
-        margin: '0 10px' // 添加水平间隔
+        margin: '10 10px' // 添加水平间隔
       }}
     />
     <button className="btn" 

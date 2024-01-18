@@ -99,10 +99,9 @@ function App() {
       </h2>
       <img src={compare1} alt="Description" width="300" height="400" />
       <img src={compare2} alt="Description" width="300" height="400" />
-      <br />
       <ImageSlider />
       <h3 style = {{color : 'brown'}}>
-        {language === 'en' ? 'NCT and Road Tax -- Still Valid!' : '车检+保险 -- 还没有过期！'}
+        {language === 'en' ? 'NCT and Road Tax -- Still Valid!' : '车检 + 路税 -- 还没有过期！'}
       </h3>
       <img src={NCT_Tax} alt="Description" width="300" height="200"/>
       <h3 style = {{color : 'brown'}}>

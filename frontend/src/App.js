@@ -16,7 +16,7 @@ import ImageSlider from './ImageSlider';
 const ResponsiveYouTubeContainer = styled.div`
   width: 100%;
   margin-left: 0;
-  margin-right: -10; 
+  margin-right: 0; 
 
   /* 对于小屏幕（如智能手机） */
   @media (max-width: 767px) {

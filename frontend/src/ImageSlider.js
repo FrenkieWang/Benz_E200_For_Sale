@@ -59,7 +59,7 @@ function ImageSlider() {
       }}
     />
     <button className="btn" 
-        onClick={goToPrevious}
+        onClick={goToNext}
         style={{ 
           border: '5px solid black', // 5像素黑色实线边框
           backgroundColor: 'white', // 白色背景
